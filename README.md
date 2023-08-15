@@ -9,3 +9,6 @@
 - Perform The EDA in `MySQL`.
 - Solving TOP 10 Business Questions.
 - Using `Power BI` to create an Interactive Dashboard.
+
+## Dashboard Screenshot:
+![Dashboard_Screenshot](https://github.com/kSam97/MySQL-Power_BI_project-Retail_Sales_Analysis/assets/142236218/04914235-794d-4be6-bb78-ab9314a149b7)
