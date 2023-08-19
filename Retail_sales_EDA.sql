@@ -1,9 +1,10 @@
+-- Create Database: retail_sales_customers_data
 create database retail_sales_customer_data;
 
+-- Use the Database
 use retail_sales_customer_data;
 
-drop table customers;
-
+-- Create Table Customers
 create table customers(
 invoice_number varchar(20),
 customer_id varchar(20),
@@ -17,8 +18,8 @@ invoice_date date,
 shopping_mall varchar(30)
 );
 
-
-select * from customers;
+-- Retriving TOP 20rows
+select * from customers LIMIT 20;
 
 LOAD DATA INFILE "C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\customer_shopping_data.csv"
 INTO TABLE customers
@@ -85,7 +86,7 @@ from customers;
 alter table customers 
 add column age_group varchar(20) after age;
 
-select * from customers;
+-- binnig the age_group colum
 
 update customers 
 set age_group = case 
@@ -246,9 +247,6 @@ group by year, month, month_no
 order by total_sale_in_Million desc;
     
 
-select * from customers;
-
-
 -- ;;; shopping_mall ;;; --
 
 -- ''' Retrive all shopping mall's name in the dataset  in alphabetical order ''' --
@@ -299,4 +297,4 @@ group by shopping_mall, gender
 order by shopping_mall;
 
 
-select * from customers;
+-- The Exploratory Data Analysis is done here Please check the other sql file for TOP 10 Business Queries.
